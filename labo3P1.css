@@ -1,0 +1,58 @@
+body{
+    background-color: HoneyDew;
+}
+
+*{
+    font-family: "sans serif";
+    align-items: center;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#divColumnas,p,#btnAgregar{
+    margin: 5px;
+}
+
+#mostrarCol{
+    margin-top: 20px;
+}
+
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 2px 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lstTipo,#inputEdadPromedio,#btnEdadPromedio,#btnAgregar,#btnAlta,#btnModificar,#btnEliminar,#btnCancelar,#lstTipoABM{
+    height: 30px;
+}
+
+#inputEdadPromedio{
+    height: 25px;
+}
+
+.tHead{
+    cursor: pointer;
+    background-color: CornflowerBlue;
+}
+
+.tBody{
+    cursor: pointer;
+    background-color: LightBlue;
+}
+
+tr:hover td{
+    background-color: LightCyan;
+}
+
+.tHead:hover{
+    background-color: SteelBlue;
+}

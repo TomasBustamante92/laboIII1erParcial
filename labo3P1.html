@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./labo3P1.css">
+	<script src="./labo3P1.js" defer></script>
+	<title>Parcial 1</title>
+</head>
+<body id="body">
+	<div id="formDatos">	
+		<h2>Form Datos</h2>
+		<div class="flex">
+			<div id="divFiltro" >
+				<p >Filtrar por: </p>
+				<select name="lstTipo" id="lstTipo" >
+					<option value="Todos" selected>Todos</option>
+					<option value="Heroes">Heroes</option>
+					<option value="Villanos">Villanos</option>
+				</select>
+			</div>
+			<div id="divEdadPromedio">
+				<p>Calcular Edad Promedio: </p>
+				<input type="text" id="inputEdadPromedio"/>
+				<input type="button" value="Calcular" id="btnEdadPromedio"><br>
+			</div>
+		</div>
+
+		<div id="divColumnas">
+			<p id="mostrarCol">Mostrar Columnas:</p>
+			<input type="checkbox" name="ID" id="id">ID
+			<input type="checkbox" name="Nombre" id="nombre">Nombre
+			<input type="checkbox" name="Apellido" id="apellido">Apellido
+			<input type="checkbox" name="Edad" id="edad">Edad
+			<input type="checkbox" name="AlterEgo" id="alterEgo">AlterEgo
+			<input type="checkbox" name="Ciudad" id="ciudad">Ciudad
+			<input type="checkbox" name="Publicado" id="publicado">Publicado
+			<input type="checkbox" name="Enemigo" id="enemigo">Enemigo
+			<input type="checkbox" name="Robos" id="robos">Robos
+			<input type="checkbox" name="Asesinatos" id="asesinatos">Asesinatos
+		</div>
+		<table id="table">
+			<thead>
+				<tr>
+					<th id="thId" class="tHead">ID</th>
+					<th id="thNombre" class="tHead">Nombre</th>
+					<th id="thApellido" class="tHead">Apellido</th>
+					<th id="thEdad" class="tHead">Edad</th>
+					<th id="thAlterEgo" class="tHead">AlterEgo</th>
+					<th id="thCiudad" class="tHead">Ciudad</th>
+					<th id="thPublicado" class="tHead">Publicado</th>
+					<th id="thEnemigo" class="tHead">Enemigo</th>
+					<th id="thRobos" class="tHead">Robos</th>
+					<th id="thAsesinatos" class="tHead">Asesinatos</th>
+				</tr>
+			</thead>
+			<tbody id="tbody" class="tBody">
+			</tbody>
+		</table>
+		<button id="btnAgregar" type="button">Agregar</button>
+	</div>
+	<div id="divAbm">
+			<h2>Formulario ABM</h2> 
+			<p>ID: <input type="text" id="inputId" readonly/><br>
+			Nombre: <input type="text" id="inputNombre"/><br> 
+			Apellido: <input type="text" id="inputApellido"/> <br>
+			Edad: <input type="text" id="inputEdad"/> <br>
+			Tipo:  
+			<select name="lstTipoABM" id="lstTipoABM">
+				<option value="Heroes">Heroes</option>
+				<option value="Villanos">Villanos</option>
+			</select>
+            </p>
+			<label id="labelAux1">labelAux1: </label><input type="text" id="inputAux1"/> <br>
+			<label id="labelAux2">labelAux2: </label><input type="text" id="inputAux2"/> <br>
+			<label id="labelAux3">labelAux3: </label><input type="text" id="inputAux3"/> <br>
+			<br>
+			<button id="btnAlta" type="button">Alta</button> 
+			<button id="btnModificar" type="button">Modificar</button> 
+			<button id="btnEliminar" type="button">Eliminar</button> 
+			<button id="btnCancelar" type="button">Cancelar</button>
+	</div>
+</body>
+</html>
